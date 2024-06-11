@@ -1,0 +1,132 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#video {
+    margin-bottom: 20px;
+}
+
+.video-comments-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.videos-column,
+.comments-column {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.separator {
+    width: 10px;
+}
+
+#results {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.video img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment p {
+    margin: 0;
+}
+
+#related-videos h2,
+#recommended-videos h2,
+#comments h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#error {
+    color: red;
+    margin-top: 20px;
+}
+
