@@ -31,7 +31,7 @@ This project is a web application that allows users to search for YouTube videos
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/youtube-sentiment-analysis.git
+    git clone https://github.com/iqbaljntra/Youtube-Sentiment-Analysis
     cd youtube-sentiment-analysis
     ```
 
