@@ -1,1 +1,106 @@
 # Youtube-Sentiment-Analysis
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # YouTube Video Search and Sentiment Analysis\
+\
+This project is a web application that allows users to search for YouTube videos, display video information, comments, and analyze the sentiments of the comments. The application fetches data from the YouTube API and uses a pre-trained sentiment analysis model to evaluate the comments.\
+\
+## Features\
+\
+- Search for YouTube videos based on a query.\
+- Display the searched video and its title.\
+- Fetch and display comments of the video.\
+- Analyze the sentiments of the comments using a pre-trained model.\
+- Display related and recommended videos.\
+- Show sentiment statistics for the comments.\
+\
+## Technologies Used\
+\
+- HTML, CSS, JavaScript for the frontend.\
+- Flask for the backend.\
+- YouTube Data API for fetching video and comment data.\
+- Pre-trained sentiment analysis model (`w11wo/indonesian-roberta-base-sentiment-classifier`) from the Hugging Face transformers library.\
+- Flask-CORS for handling Cross-Origin Resource Sharing (CORS).\
+\
+## Prerequisites\
+\
+- Python 3.x\
+- Flask\
+- Flask-CORS\
+- Transformers library from Hugging Face\
+- An API key from the YouTube Data API v3\
+\
+## Installation\
+\
+1. Clone the repository:\
+    ```bash\
+    git clone https://github.com/yourusername/youtube-sentiment-analysis.git\
+    cd youtube-sentiment-analysis\
+    ```\
+\
+2. Create a virtual environment and activate it:\
+    ```bash\
+    python -m venv venv\
+    source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`\
+    ```\
+\
+3. Install the required Python packages:\
+    ```bash\
+    pip install -r requirements.txt\
+    ```\
+\
+4. Replace the `apiKey` variable in `app.js` with your YouTube Data API key:\
+    ```javascript\
+    const apiKey = 'YOUR_YOUTUBE_API_KEY';\
+    ```\
+\
+5. Save the sentiment analysis model as `sentiment_model.joblib` in the project directory.\
+\
+6. Run the Flask backend server:\
+    ```bash\
+    python app.py\
+    ```\
+\
+## Usage\
+\
+1. Open `index.html` in your web browser.\
+\
+2. Use the search bar to search for a YouTube video.\
+\
+3. The application will display the video, related and recommended videos, and fetch the comments.\
+\
+4. The sentiments of the comments will be analyzed and displayed.\
+\
+## Project Structure\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u9500 \u9472 \u9472  app.py # Flask backend server \
+\uc0\u9500 \u9472 \u9472  app.js # JavaScript for handling YouTube API and sentiment analysis \
+\uc0\u9500 \u9472 \u9472  index.html # Main HTML file \
+\uc0\u9500 \u9472 \u9472  styles.css # CSS file for styling \
+\uc0\u9500 \u9472 \u9472  sentiment_model.joblib # Pre-trained sentiment analysis model \
+\uc0\u9500 \u9472 \u9472  README.md # Project documentation \
+\uc0\u9500 \u9472 \u9472  requirements.txt # Required Python packages\
+\
+\
+## License\
+\
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.\
+\
+## Acknowledgements\
+\
+- [YouTube Data API](https://developers.google.com/youtube/v3)\
+- [Hugging Face Transformers](https://huggingface.co/transformers/)\
+- [Flask](https://flask.palletsprojects.com/)\
+\
+## Contact\
+\
+If you have any questions or suggestions, feel free to contact me at [your email address].\
+}
